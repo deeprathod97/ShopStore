@@ -1,0 +1,126 @@
+/* ProductCard.css */
+
+/* Container for the product card */
+.product-card-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows cards to wrap to the next line if necessary */
+    justify-content: space-evenly; /* Distribute the space evenly between cards */
+    gap: 20px; /* Space between the cards */
+  }
+  
+  /* Individual Product card */
+  .product-card {
+    display: inline-block; /* Aligns cards next to each other */
+    width: 250px; /* Set fixed width for each card */
+    height: 350px; /* Set fixed height for each card */
+    padding: 16px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  /* Styling for the product image */
+  .product-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  
+  /* Title of the product */
+  .product-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 12px;
+    text-align: center;
+  }
+  
+  /* Rating stars */
+  .product-rating {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+  }
+  
+  .star-filled {
+    color: #FFD700;
+  }
+  
+  .star-empty {
+    color: #ccc;
+  }
+  
+  .rating-count {
+    margin-left: 5px;
+    font-size: 0.9rem;
+    color: #777;
+  }
+  
+  /* Footer section (price and button) */
+  .product-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: auto; /* Push footer to the bottom */
+  }
+  
+  .product-price {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .add-to-cart-button {
+    padding: 8px 16px;
+    font-size: 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-to-cart-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .add-to-cart-button.added {
+    background-color: #28a745;
+  }
+  
+  .add-to-cart-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  /* Style for the Next Page button */
+.next-page-button {
+    background-color: #000; /* Black background */
+    color: white; /* White text */
+    border: 1px solid #000; /* Black border */
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .next-page-button:hover {
+    background-color: #333; /* Darker shade on hover */
+    color: #fff; /* White text on hover */
+  }
+  
+  .next-page-button:disabled {
+    background-color: #ccc; /* Disabled state background */
+    color: #777; /* Disabled state text color */
+    cursor: not-allowed;
+  }
+  
